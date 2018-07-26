@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<plugin id="Gnumeric_WebQueryPlugin">
+	<information>
+		<name>Other Python functions from HOWTO</name>
+		<description>A few extra python functions demonstrating the API.</description>
+	</information>
+	<loader type="Gnumeric_PythonLoader:python">
+		<attribute name="module_name" value="webquery"/>
+	</loader>
+	<services>
+		<service type="function_group" id="webquery">
+			<category>Local Python</category>
+			<functions>
+			  <function name="ImportJSON"/>
+			</functions>
+		</service>
+	</services>
+</plugin>
